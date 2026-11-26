@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="desing_primario">#C8102E</color>
+    <color name="desing_exito">#11663A</color>
+    <color name="desing_error">#B00020</color>
+
+    <!-- Estilo de tarjeta reutilizable por cualquier módulo que dependa de :desing -->
+    <style name="Desing.Tarjeta" parent="Widget.Material3.CardView.Outlined">
+        <item name="contentPadding">16dp</item>
+        <item name="android:layout_marginBottom">12dp</item>
+    </style>
+
+    <style name="Desing.Titulo" parent="TextAppearance.Material3.TitleMedium">
+        <item name="android:textColor">@color/desing_primario</item>
+    </style>
+</resources>

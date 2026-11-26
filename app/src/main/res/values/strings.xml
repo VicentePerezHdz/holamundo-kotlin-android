@@ -1,0 +1,12 @@
+<resources>
+    <!-- Regla de AC Móvil: los textos visibles van en strings.xml, nunca hardcodeados. -->
+    <string name="app_name">Hola Mundo</string>
+    <string name="titulo_saludo">1. Saludo (input texto)</string>
+    <string name="hint_nombre">Escribe tu nombre</string>
+    <string name="btn_saludar">Saludar</string>
+    <string name="titulo_calculadora">2. Calculadora</string>
+    <string name="hint_a">A</string>
+    <string name="hint_b">B</string>
+    <string name="btn_calcular">Calcular</string>
+    <string name="titulo_combo">3. Combobox con mensaje</string>
+</resources>

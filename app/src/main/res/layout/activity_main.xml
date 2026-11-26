@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/raiz"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- Barra superior con el título (android:label / app_name) -->
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:title="@string/app_name" />
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- 1. Saludo: input de texto -->
+        <com.google.android.material.card.MaterialCardView style="@style/Desing.Tarjeta"
+            android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView style="@style/Desing.Titulo" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:text="@string/titulo_saludo" />
+                <EditText android:id="@+id/etNombre" android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:hint="@string/hint_nombre"
+                    android:importantForAutofill="no" android:inputType="textPersonName" />
+                <Button android:id="@+id/btnSaludar" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:text="@string/btn_saludar" />
+                <TextView android:id="@+id/tvSaludo" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:visibility="gone" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- 2. Calculadora -->
+        <com.google.android.material.card.MaterialCardView style="@style/Desing.Tarjeta"
+            android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView style="@style/Desing.Titulo" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:text="@string/titulo_calculadora" />
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:gravity="center_vertical" android:orientation="horizontal">
+                    <EditText android:id="@+id/etNumeroA" android:layout_width="0dp" android:layout_weight="1"
+                        android:layout_height="wrap_content" android:hint="@string/hint_a" android:text="10"
+                        android:importantForAutofill="no" android:inputType="numberDecimal|numberSigned" />
+                    <Spinner android:id="@+id/spOperacion" android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <EditText android:id="@+id/etNumeroB" android:layout_width="0dp" android:layout_weight="1"
+                        android:layout_height="wrap_content" android:hint="@string/hint_b" android:text="5"
+                        android:importantForAutofill="no" android:inputType="numberDecimal|numberSigned" />
+                </LinearLayout>
+                <Button android:id="@+id/btnCalcular" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:text="@string/btn_calcular" />
+                <TextView android:id="@+id/tvResultado" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:visibility="gone" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- 3. Combobox (Spinner) con mensaje -->
+        <com.google.android.material.card.MaterialCardView style="@style/Desing.Tarjeta"
+            android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView style="@style/Desing.Titulo" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:text="@string/titulo_combo" />
+                <Spinner android:id="@+id/spLenguaje" android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <TextView android:id="@+id/tvMensajeLenguaje" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:visibility="gone" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+    </LinearLayout>
+</ScrollView>
+</LinearLayout>
