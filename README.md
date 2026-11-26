@@ -1,5 +1,7 @@
 # Hola Mundo · Kotlin + Android
 
+[![CI](https://github.com/VicentePerezHdz/holamundo-kotlin-android/actions/workflows/ci.yml/badge.svg)](https://github.com/VicentePerezHdz/holamundo-kotlin-android/actions/workflows/ci.yml) [![Licencia: MIT](https://img.shields.io/badge/licencia-MIT-blue.svg)](LICENSE)
+
 App Android multimódulo con MVVM y Dagger 2. Funciona sin servidor (offline-first) y tiene tres funciones: saludo con input de texto, calculadora y combobox con mensaje.
 
 ## Qué demuestra
@@ -20,3 +22,7 @@ JDK 17, Android SDK y Android Studio. Al abrir el proyecto, Android Studio crea 
 ```
 
 La explicación completa está en [`docs/Documento_Transicion.md`](docs/Documento_Transicion.md).
+
+## Licencia
+
+[MIT](LICENSE)
